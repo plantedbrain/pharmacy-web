@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      overflow:hidden;
+
+}
+
+.morewine {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+}
+.btn{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px 40px;
+  border: 2px solid #e7e7e7
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid green;
+  border-color:#3498db;
+}
+
+.btn:hover {
+  background-color: white;
+  background-color:#3e8e41;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 40px;
+}
+.nav_links {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+.bt {
+      background: none;
+      color: white;
+      height: 80px;
+      width:500px;
+      border: 1px solid #2ecc72;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+}
+
+
+
+.wines {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #1e1e1e;
+      z-index: 1;
+      opacity: 0;
+}
+
+#wrap {
+      position: absolute;
+      left: 0%;
+      top: -8%;
+      width: 150%;
+      height: 100%;
+      display: flex;
+      margin: 0 25%;
+}
+
+.block {
+      position: relative;
+      width: 25%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+      transform: scale(0.97);
+}
+
+.product {
+      position: relative;
+      display: block;
+      max-width: 80%;
+}
+
+.product img {
+      position: relative;
+      display: block;
+      width: 80%;
+      height: 50%;
+      z-index: 2;
+}
+
+.txt {
+      position: absolute;
+      top: 104%;
+      left: 2%;
+      width: 80%;
+      opacity: 0;
+      text-align: center;
+        font-family: 'Kosugi', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      z-index: 1;
+      transform: scaleY(1) translateY(-30px);
+      transition: transform .2s, opacity .5s;
+}
+
+.txt p {
+      margin-bottom: 20px;
+}
+
+.wines button {
+      margin-top: 10px;
+      padding: 16px 28px;
+}
+
+
+h1 {
+
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-family: Helvetica;
+
+}
+
+.block:hover .txt {
+      opacity: 1;
+      transform: scaleY(1) translateY(0);
+}
+
+.close-btn {
+        text-decoration: none;
+        background: none;
+        color: #1e1e1e;
+        height: 90px;
+        width:100px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      cursor: pointer;
+}
+
+@media(max-width: 768px) {
+      .title {
+            font-size: 42px;
+      }
+
+      .tagline {
+            font-size: 15px;
+      }
+
+      .outline {
+            width: 92%;
+          }
+}

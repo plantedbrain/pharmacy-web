@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Failed</title>
+    <link rel="stylesheet" href="scss/sweetalert2.min.css">
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="scss/Homeus.css?v=<?php echo time() ?>">
+   <script type="text/javascript">
+      function salert(){
+        Swal.fire({
+   text: 'Invalid Details',
+   background:"#1e1e1e",
+   imageUrl: 'img/fail.jpeg',
+   imageWidth: 360,
+   imageHeight: 250,
+   imageAlt: 'Custom image',
+ }).then(function(){
+   window.location = "http://localhost/webmini/login.html";
+ });
+    }
+
+    </script>
+  </head>
+
+    <body>
+      <header>
+        <img class="logo" src="img/bff.png" alt="logo" width="200" height="100">
+        <script type="text/javascript">
+          document.getElementById("demo").innerHTML = window.salert();
+
+        </script>
+      </header>
+  </body>
+</html>

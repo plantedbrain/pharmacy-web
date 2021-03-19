@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+    <title>Register</title>
+
+    <link rel="stylesheet" type="text/css" href="scss/retailer_register.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        A
+        {text-decoration:none;
+        color:white;
+        }
+    </style>
+</head>
+
+    <body>
+
+        <script type="text/javascript">
+        function transition() {
+          var tl = new TimelineMax();
+
+          tl.to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '50%' }, ease: Power2.easeOut}, 'close')
+          .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '50%' }, ease: Power2.easeOut}, 'close')
+          .to($('.loader'), 0.2, {opacity: 1})
+          .to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '0%' }, ease: Power2.easeOut}, '+=1.5', 'open')
+          .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '0%' }, ease: Power2.easeOut}, '-=0.2', 'open')
+          .to($('.loader'), 0.2, {opacity: 0}, '-=0.2');
+        }
+
+
+        </script>
+
+          <div class="loader">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div class="bar4"></div>
+          <div class="bar5"></div>
+          <div class="bar6"></div>
+        </div>
+        <div class="-content -index">
+          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js'></script>
+
+            <script >
+            document.getElementById("demo").innerHTML = window.transition();
+
+            </script>
+    
+
+
+     <form class="login"  method="POST" action="php/register.php">
+         <h1  style="letter-spacing:5px;">Register</h1>
+         <input type="text" name = "F-Name" placeholder="F-Name" required align="center">
+         <input type="text" name = "L-Name" placeholder="L-Name*"  align="center">
+         <input type="text" name = "Gender" placeholder="Gender" required align="center">
+         <input type="text" name = "Address" placeholder="Address" required align="center">
+         <input type="email" name = "E-Mail" placeholder="E-Mail" required align="center">
+         <input type="tel" name = "Phone/Land-line" placeholder="Phone/Land-line" required align="center">
+         <input type="password" name = "Password" placeholder="Password" required align="center">
+         <input type="password" name = "ConfirmPassword" placeholder="Confirm Password" required >
+         <input type="submit" name="submit">
+                 <center><p style="letter-spacing:5px;">Already have an account? <a href="login.html"> Sign in </a></p>
+
+     </form>
+    </body>
+
+<body>
+
+</body>
+</html>

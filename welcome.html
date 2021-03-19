@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="scss/dark.css">
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="scss/Homeus.css?version=51">
+    <link rel="stylesheet" type="text/css" href="scss/footer_h.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    function contact()
+    {
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Sent',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
+
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <img class="logo"  id="home"  src="img/bff.png" alt="logo" width="200" height="100">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#img">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#h">Services</a></li>
+          <li> <a href="signup.php"> <button type="button" id="register"  class="btn" >Register</button></a></li>
+          <li> <a href="login.html"> <button type="button" id="login"  class="btn" >Login</button></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner">
+      <center><img  src="img/banner.jpeg" class="Med">
+    </div>
+    <div class="container">
+      <div class="first">
+        <div class="image" id="img">
+          <img src="img/survey.jpeg" alt="">
+        </div>
+      <div class="content">
+          <p id="pp">Bringing together regulatory and market access consulting expertise means that we can help our clients address the requirements of  regulators, providers, payers and patients holistically.
+            This accelerates timelines, reduces risk of delays, and improves efficiency.
+            Our strategic advisory teams help companies to establish a systematic integration of regulatory requirements, patient engagement, and pricing and market access into the R&D process for better, faster drug development. </p>
+      </div>
+      </div>
+      <div class="second">
+        <div class="content">
+          <p id="p2">We know that the most critical therapies for so many untreated diseases are in the biotech pipeline. We also know that no two biotech companies are the same. Each one requires a unique solution.
+            At BFF, we are focused on meeting customer and patient needs with tailored, flexible solutions that speed development and increase the likelihood of launch so that we get treatments into the hands of patients who need them most. </p>
+        </div>
+        <div class="image" id="imgg">
+          <img src="img/research.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="image" id="img1">
+            <img src="img/lab.jpeg" alt="">
+        </div>
+          <div class="content" >
+            <p id="pp">BFF’s Clinical Research Services help get your new medical breakthroughs into the hands that need them most.
+              Through our Patient Innovation Center, BFF puts the patient at the center of the clinical research process to reduce their practical, geographical and financial barriers to participation.
+              The end result is a more engaged patient, higher recruitment and retention rates, better data and reduced study timelines and costs.</p>
+          </div>
+        </div>
+  </div>
+  
+    <div class="contact" id="contact">
+    <div class="inner">
+      <h1 style="color:white;">Get in touch with us</h1>
+      <input type="text"  class="name" placeholder="Your Name" required/>
+      <input type="email"  class="email" placeholder="Your Email" required/>
+      <br><textarea rows="1" placeholder="Message" class="message" required/></textarea>
+      <br><button class="btn" onclick="contact()" required/>Get in touch</button>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="pp"><a href="1.html"><img src="img/bff.png" alt="Logo" style= "width:300px; height:150px;"></a><br><br>
+      Donec molestie pede vel urna. Curabitur eget sem ornare felis gravida vestibulum.Sed pulvinar, tellus in venenatis vehicula, lorem magna dignissim erat, in accumsan ante lorem sit amet lorem.</p>
+  </div>
+  <div class="p1">
+    <br><h2 id="h">Navigation</h2><br>
+  <ul id="a">
+      <li><a href="#home">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="home.html">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#h"></a></li>
+  </ul>
+  </div>
+  <div class="p1">
+    <br><h2 id="h">Get Help</h2><br>
+    <ul id="a">
+      <li><a href="home.html">Order Status</a></li>
+      <li><a href="home.html">Delivery</a></li>
+      <li><a href="home.html">Refunds</a></li>
+      <li><a href="home.html">Payment Option</a></li>
+    </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

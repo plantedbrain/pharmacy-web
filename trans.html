@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Page Transition with Loader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+function transition() {
+  var tl = new TimelineMax();
+
+  tl.to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '50%' }, ease: Power2.easeOut}, 'close')
+  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '50%' }, ease: Power2.easeOut}, 'close')
+  .to($('.loader'), 0.2, {opacity: 1})
+  .to(CSSRulePlugin.getRule('body:before'), 0.2, {cssRule: {top: '0%' }, ease: Power2.easeOut}, '+=1.5', 'open')
+  .to(CSSRulePlugin.getRule('body:after'), 0.2, {cssRule: {bottom: '0%' }, ease: Power2.easeOut}, '-=0.2', 'open')
+  .to($('.loader'), 0.2, {opacity: 0}, '-=0.2');
+}
+
+</script>
+
+</head>
+
+<body>
+  <div class="loader">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <div class="bar4"></div>
+  <div class="bar5"></div>
+  <div class="bar6"></div>
+</div>
+<div class="-content -index">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/plugins/CSSRulePlugin.min.js'></script>
+
+    <script >
+    document.getElementById("demo").innerHTML = window.transition();
+
+    </script>
+<main>
+
+    <div>
+      <img src="img/bff.png" alt="HTML5 Icon"  style="width:200 px;height:200px;">
+       <form class="login"  method="POST" action="forgetpassword.php">
+           <h1>Forget Password</h1>
+           <input  type="email" name = "user" placeholder="E-Mail" />
+           <input  type="password" name = "pass" placeholder="New Password" />
+           <input  type="password" name = "pass1" placeholder="Confirm Password" />
+
+          <input type="submit" name="submit" >
+        </form>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
